@@ -1,19 +1,19 @@
 "use strict";
 
 
-angular.module('app.dbSettings', ['ui.router'])
+angular.module('app.systemSettings', ['ui.router'])
 .config(function ($stateProvider) {
 
     $stateProvider
-        .state('app.dbSettings', {
-            url: '/database-settings',
+        .state('app.systemSettings', {
+            url: '/system-settings',
             data: {
-                title: 'Database Settings'
+                title: 'Developer Console  / Config / System Settings'
             },
             views: {
                 "content@app": {
-                    templateUrl: 'app/config/views/db-settings.html',
-                    controller: 'DatabaseSettingsController'
+                    templateUrl: 'app/config/views/system-settings.html',
+                    controller: 'SystemSettingsController'
                 }
             }
         })
@@ -27,7 +27,7 @@ angular.module('app.emailTemplates', ['ui.router'])
         .state('app.emailTemplates', {
             url: '/email-templates',
             data: {
-                title: 'Email Templates'
+                title: 'Developer Console / Config / Email Templates'
             },
             views: {
                 "content@app": {
@@ -45,7 +45,7 @@ angular.module('app.signInMethods', ['ui.router'])
         .state('app.signInMethods', {
             url: '/sign-in-methods',
             data: {
-                title: 'Sign-In Methods'
+                title: 'Developer Console  / Config / Sign-In Methods'
             },
             views: {
                 "content@app": {

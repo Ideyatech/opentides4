@@ -6,11 +6,11 @@ angular.module('SmartAdmin.Layout').directive('stateBreadcrumbs', function ($roo
     return {
         restrict: 'EA',
         replace: true,
-        template: '<ol class="breadcrumb"><li>Home</li></ol>',
+        template: '<ol class="breadcrumb"><li><i class="fa-fw fa fa-home"></i></li></ol>',
         link: function (scope, element) {
 
             function setBreadcrumbs(breadcrumbs) {
-                var html = '<li>Home</li>';
+                var html = '<li><i class="fa-fw fa fa-home"></i></li>';
                 angular.forEach(breadcrumbs, function (crumb) {
                     html += '<li>' + crumb + '</li>'
                 });

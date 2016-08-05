@@ -37,7 +37,7 @@ angular.module('app', [
     //'app.smartAdmin',
     //'app.eCommerce'
     'app.home',
-    'app.dbSettings',
+    'app.systemSettings',
     'app.signInMethods',
     'app.emailTemplates'
 ])

@@ -8,7 +8,7 @@ angular.module('app.home', ['ui.router'])
         .state('app.home', {
             url: '/home',
             data: {
-                title: 'Blank'
+                title: 'Dashboard'
             },
             views: {
                 "content@app": {
