@@ -10,3 +10,4 @@ target
 project/*
 logs
 /.target
+/smartadmin-angular-js-full/

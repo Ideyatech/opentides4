@@ -12,9 +12,39 @@
 
         <ul data-smart-menu>
 
-            <li data-ui-sref-active="active">
-                <a data-ui-sref="app.home" title="Outlook">
-                    <i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">{{getWord('Home')}}</span></a>
+            <li data-ui-sref-active="active" >
+                <a data-ui-sref="app.home" title="Dashboard">
+                    <i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">{{getWord('Dashboard')}}</span></a>
+            </li>
+            
+            
+            <li ng-class="{active: 
+						('app.dbSettings' | includedByState) || 
+						('app.signInMethods' | includedByState) || 
+						('app.emailTemplates' | includedByState) }" data-menu-collapse>
+                <a href="#" data-ui-sref="app.dbSettings" title="Developer Console">
+                    <i class="fa fa-lg fa-fw fa-code"></i> <span class="menu-item-parent">{{getWord('Developer Console')}}</span></a>
+                <ul>
+                	
+                    <li ng-class="{active: 
+						('app.dbSettings' | includedByState) || 
+						('app.signInMethods' | includedByState) || 
+						('app.emailTemplates' | includedByState) }">
+                        <a data-ui-sref="app.dbSettings">{{getWord('Config')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a >{{getWord('Base User')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a >{{getWord('Roles')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a >{{getWord('CRUD Builder')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a >{{getWord('Workflows')}}</a>
+                    </li>
+                </ul>
             </li>
 
         </ul>

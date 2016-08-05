@@ -8,7 +8,7 @@
     "dev": "gulp dev",
     "prod": "gulp prod"
   },
-  "author": "Allan Tan",
+  "author": "Ideyatech",
   "license": "NTP",
   "devDependencies": {
     "gulp": "^3.9.0",

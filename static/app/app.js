@@ -36,11 +36,14 @@ angular.module('app', [
     //'app.misc',
     //'app.smartAdmin',
     //'app.eCommerce'
-    'app.home'
+    'app.home',
+    'app.dbSettings',
+    'app.signInMethods',
+    'app.emailTemplates'
 ])
-.config(function ($provide, $httpProvider, RestangularProvider) {
+.config(function ($provide, $httpProvider, $locationProvider, RestangularProvider) {
 
-
+	
     // Intercept http calls.
     $provide.factory('ErrorHttpInterceptor', function ($q) {
         var errorCounter = 0;
@@ -79,6 +82,7 @@ angular.module('app', [
     // Add the interceptor to the $httpProvider.
     $httpProvider.interceptors.push('ErrorHttpInterceptor');
 
+	$locationProvider.html5Mode(true);
     RestangularProvider.setBaseUrl(location.pathname.replace(/[^\/]+?$/, ''));
 
 })
