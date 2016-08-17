@@ -11,3 +11,5 @@ project/*
 logs
 /.target
 /smartadmin-angular-js-full/
+**/build/
+**/node_modules/
