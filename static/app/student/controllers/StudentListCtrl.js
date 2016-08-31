@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.student').controller('StudentListCtrl', function (DTOptionsBuilder, DTColumnBuilder) {
+angular.module('app.student').controller('StudentListCtrl', function () {
 
 	
 	

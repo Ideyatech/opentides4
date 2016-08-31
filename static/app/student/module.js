@@ -15,7 +15,7 @@ angular.module('app.student').config(function ($stateProvider) {
         .state('app.student.list', {
             url: '/student/list',
             data: {
-                title: 'Student List'
+                title: 'Students'
             },
             views: {
                 "content@app": {
