@@ -1,0 +1,465 @@
+<div id="content">
+<div class="row">
+    <big-breadcrumbs items="['Students']" icon="user" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></big-breadcrumbs>
+</div>
+
+	<section id="widget-grid" widget-grid>
+	
+		<div class="row">
+	
+			<article class="col-sm-3 col-md-3 col-lg-3">
+	
+				<div jarvis-widget id="student-search" data-widget-deletebutton="false">
+					<header>
+						<h2>Search</h2>
+					</header>
+					
+					<div>
+						<div class="widget-body no-padding">
+							<form class="smart-form">
+								
+								<fieldset>
+									
+								    <section>
+								        <label class="label">Name</label>
+								        <label class="input">
+								            <input type="text">
+								        </label>
+								    </section>
+								    <section>
+								        <label class="label">Email</label>
+								        <label class="input">
+								            <input type="text">
+								        </label>
+								    </section>
+								    <section>
+								        <label class="label">Gender</label>
+								        <label class="select">
+								            <select>
+								            	<option></option>
+								            	<option>Male</option>
+								            	<option>Female</option>
+								            </select>
+								        </label>
+								    </section>
+								    <section>
+								        <label class="label">City</label>
+								        <label class="select">
+								            <select multiple style="height: 70px;">
+								            	<option>Pasig</option>
+								            	<option>Paranaque</option>
+								            	<option>Quezon City</option>
+								            </select>
+								        </label>
+								    </section>
+								    <section>
+								        <label class="label">Balance</label>
+								        <label class="select">
+								            <select>
+								            	<option></option>
+								            	<option>Students with balance only</option>
+								            </select>
+								        </label>
+								    </section>
+							    </fieldset>
+					
+								<footer>
+					                <button type="button" class="btn btn-default">
+					                    Search
+					                </button>
+					            </footer>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</article>
+			
+			<article class="col-sm-9 col-md-9 col-lg-9">
+	
+				<div jarvis-widget id="student-entries" data-widget-deletebutton="false">
+					<header>
+						<h2>Entries</h2>
+					</header>
+					
+					<div>
+						<div class="widget-body no-padding">
+						
+							<div class="clearfix">
+								<p class="pull-left" style="margin: 15px 10px;">
+									<small><i>Showing 10 of 43 entries</i></small>
+								</p>
+								
+								<a class="btn btn-success pull-right"
+									style="margin: 10px;"
+									data-toggle="modal" data-target="#myModal">Add Student</a>
+							</div>
+								
+							<div class="table-responsive">
+
+			                    <table class="table table-bordered">
+			                        <thead>
+			                        <tr>
+			                            <th>Name</th>
+			                            <th>Gender</th>
+			                            <th>City</th>
+			                            <th>Email Address</th>
+			                            <th>Contact Number</th>
+			                            <th>Balance</th>
+			                            <th width="50"></th>
+			                        </tr>
+			                        </thead>
+			                        <tbody>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">Allan Tan</a></td>
+			                            <td>Male</td>
+			                            <td>Pasig</td>
+			                            <td>allan@ideyatech.com</td>
+			                            <td>0975 830 2023</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">AJ Albaniel</a></td>
+			                            <td>Male</td>
+			                            <td>Paranaque</td>
+			                            <td>aj@ideyatech.com</td>
+			                            <td>0977 677 0653</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">Chris Lee</a></td>
+			                            <td>Male</td>
+			                            <td>Taguig</td>
+			                            <td>chris@ideyatech.com</td>
+			                            <td>0976 823 9910</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">Danica Ocampo</a></td>
+			                            <td>Female</td>
+			                            <td>Quezon City</td>
+			                            <td>danica@ideyatech.com</td>
+			                            <td>0922 837 12 92</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr><tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">Allan Tan</a></td>
+			                            <td>Male</td>
+			                            <td>Pasig</td>
+			                            <td>allan@ideyatech.com</td>
+			                            <td>0975 830 2023</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">AJ Albaniel</a></td>
+			                            <td>Male</td>
+			                            <td>Paranaque</td>
+			                            <td>aj@ideyatech.com</td>
+			                            <td>0977 677 0653</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">Chris Lee</a></td>
+			                            <td>Male</td>
+			                            <td>Taguig</td>
+			                            <td>chris@ideyatech.com</td>
+			                            <td>0976 823 9910</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">Danica Ocampo</a></td>
+			                            <td>Female</td>
+			                            <td>Quezon City</td>
+			                            <td>danica@ideyatech.com</td>
+			                            <td>0922 837 12 92</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">Allan Tan</a></td>
+			                            <td>Male</td>
+			                            <td>Pasig</td>
+			                            <td>allan@ideyatech.com</td>
+			                            <td>0975 830 2023</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                            <td><a data-ui-sref="app.student.profile" title="Profile">AJ Albaniel</a></td>
+			                            <td>Male</td>
+			                            <td>Paranaque</td>
+			                            <td>aj@ideyatech.com</td>
+			                            <td>0977 677 0653</td>
+			                            <td>0 Php</td>
+			                            <td>
+			                            	<i class="fa fa-edit"></i>
+			                            	<i class="fa fa-trash-o"></i>
+			                            </td>
+			                        </tr>
+			                        <tr>
+			                        </tbody>
+			                    </table>
+
+               				 </div>
+			                    
+			                    
+		                    <div class="text-center">
+						        <ul class="pagination pagination-sm">
+						            <li>
+						                <a href-void="" href="#"><i class="fa fa-angle-left"></i></a>
+						            </li>
+						            <li class="active">
+						                <a href-void="" href="#">1</a>
+						            </li>
+						            <li>
+						                <a href-void="" href="#">2</a>
+						            </li>
+						            <li>
+						                <a href-void="" href="#">3</a>
+						            </li>
+						            <li>
+						                <a href-void="" href="#">4</a>
+						            </li>
+						            <li>
+						                <a href-void="" href="#">5</a>
+						            </li>
+						            <li>
+						                <a href-void="" href="#"><i class="fa fa-angle-right"></i></a>
+						            </li>
+						        </ul>
+						    </div>
+						</div>
+					</div>
+				</div>
+				
+			</article>
+			
+		</div>
+	
+	</section>
+	
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Add Student</h4>
+            </div>
+            <form class="smart-form">
+            <div class="modal-body ">
+				
+               	
+               	<section>
+               		<fieldset>
+               			
+					    <div class="row">
+	               			<section class="col col-2">
+			                	<img src="styles/img/avatars/male.png" class="img-responsive" width="100%" />
+			               	</section>
+	               			<section class="col col-10">
+						        <label class="label">Primary Photo</label>
+						        <div class="input input-file">
+						            <span class="button">
+						            <input type="file" id="file" name="file"
+						                onchange="this.parentNode.nextSibling.value = this.value">Browse</span><input
+						                type="text" readonly="">
+						        </div>
+						    </section>
+						</div>
+					    <div class="row">
+					    	<section class="col col-4">
+						        <label class="label">Last Name</label>
+						        <label class="input">
+						            <input type="text">
+						        </label>
+						    </section>
+					    	<section class="col col-4">
+						        <label class="label">First Name</label>
+						        <label class="input">
+						            <input type="text">
+						        </label>
+						    </section>
+					    	<section class="col col-4">
+						        <label class="label">Middle Name</label>
+						        <label class="input">
+						            <input type="text">
+						        </label>
+						    </section>
+						</div>
+					    <div class="row">
+					    	
+					    	<section class="col col-4">
+						        <label class="label">Email</label>
+						        <label class="input">
+						            <input type="text">
+						        </label>
+						    </section>
+						    <section class="col col-4">
+						        <label class="label">Birthdate</label>
+						        <label class="input">
+						        	 <input ng-model="birthdate" type="text" data-smart-datepicker data-dateformat='dd/mm/yy' >
+						        </label>
+						    </section>
+						    <section class="col col-4">
+						        <label class="label">Gender</label>
+						        <label class="radio">
+			                    <input type="radio" name="radio" checked="checked">
+			                    <i></i>Male</label>
+						        <label class="radio">
+			                    <input type="radio" name="radio" checked="checked">
+			                    <i></i>Female</label>
+						    </section>
+						    
+						</div> 
+					    
+					    <div class="row">
+						    <section class="col col-4">
+						        <label class="label">Country</label>
+						        <label class="select">
+						            <select>
+						            	<option>Philippines</option>
+						            </select>
+						        </label>
+						    </section>
+						    <section class="col col-4">
+						        <label class="label">City</label>
+						        <label class="select">
+						            <select>
+						            	<option>Pasig</option>
+						            	<option>Paranaque</option>
+						            	<option>Quezon City</option>
+						            </select>
+						        </label>
+						    </section>
+						    <section class="col col-4">
+						        <label class="label">Mobile Number</label>
+						        <label class="input">
+						            <input type="text">
+						        </label>
+						    </section>
+					    </div>
+					    
+					    <div class="row">
+					    
+					    	<section class="col col-4">
+						        <label class="label">Password</label>
+						        <label class="input">
+						            <input type="password">
+						        </label>
+						    </section>
+						    <section class="col col-4">
+						        <label class="label">Confirm Password</label>
+						        <label class="input">
+						            <input type="password">
+						        </label>
+						    </section>
+					    </div>
+				    </fieldset>
+				    
+				    
+               		<fieldset>
+               			<section>
+               				<i>In case of emergency</i>
+               			</section>
+               			<div class="row" ng-show="birthdate == null">
+					    	<section class="col col-4">
+						        <label class="label">Contact Name</label>
+						        <label class="input">
+						            <input type="text">
+						        </label>
+						    </section>
+					    	<section class="col col-4">
+						        <label class="label">Contact Number</label>
+						        <label class="input">
+						            <input type="text">
+						        </label>
+						    </section>
+						</div>
+						
+						
+						<div ng-show="birthdate != null">
+							<div class="row">
+						    	<section class="col col-4">
+							        <label class="label">Father's Name</label>
+							        <label class="input">
+							            <input type="text">
+							        </label>
+							    </section>
+						    	<section class="col col-4">
+							        <label class="label">Father's Contact Number</label>
+							        <label class="input">
+							            <input type="text">
+							        </label>
+							    </section>
+							</div>
+							<div class="row">
+						    	<section class="col col-4">
+							        <label class="label">Mother's Name</label>
+							        <label class="input">
+							            <input type="text">
+							        </label>
+							    </section>
+						    	<section class="col col-4">
+							        <label class="label">Mother's Contact Number</label>
+							        <label class="input">
+							            <input type="text">
+							        </label>
+							    </section>
+							</div>
+						</div>
+						
+               			
+               		</fieldset>
+               	</section>
+            </div>
+            </form>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Add User
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

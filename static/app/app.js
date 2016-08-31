@@ -39,7 +39,11 @@ angular.module('app', [
     'app.home',
     'app.systemSettings',
     'app.signInMethods',
-    'app.emailTemplates'
+    'app.emailTemplates',
+    
+
+    'app.student',
+    'app.class'
 ])
 .config(function ($provide, $httpProvider, $locationProvider, RestangularProvider) {
 

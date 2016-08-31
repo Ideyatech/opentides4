@@ -1,7 +1,7 @@
 <aside id="left-panel">
 
     <!-- User info -->
-    <div login-info></div>
+    <!-- <div login-info></div> -->
     <!-- end user info -->
 
     <nav>
@@ -13,12 +13,22 @@
         <ul data-smart-menu>
 
             <li data-ui-sref-active="active" >
-                <a data-ui-sref="app.home" title="Dashboard">
-                    <i class="fa fa-lg fa-fw fa-dashboard"></i> <span class="menu-item-parent">{{getWord('Dashboard')}}</span></a>
+                <a data-ui-sref="app.student.list" title="Students">
+                    <i class="fa fa-lg fa-fw fa-user"></i> <span class="menu-item-parent">{{getWord('Students')}}</span></a>
             </li>
-            
-            
-            <li ng-class="{active: 
+             <li data-ui-sref-active="active" >
+                <a data-ui-sref="app.class.list" title="Classes">
+                    <i class="fa fa-lg fa-fw fa-book"></i> <span class="menu-item-parent">{{getWord('Classes')}}</span></a>
+            </li>
+             <li>
+                <a title="Classes">
+                    <i class="fa fa-lg fa-fw fa-group"></i> <span class="menu-item-parent">{{getWord('G-Force Projects')}}</span></a>
+            </li>
+             <li>
+                <a title="Teachers">
+                    <i class="fa fa-lg fa-fw fa-graduation-cap"></i> <span class="menu-item-parent">{{getWord('Teachers')}}</span></a>
+            </li>
+            <!-- <li ng-class="{active: 
 						('app.systemSettings' | includedByState) || 
 						('app.signInMethods' | includedByState) || 
 						('app.emailTemplates' | includedByState) }" data-menu-collapse>
@@ -42,7 +52,7 @@
                         <a >{{getWord('Workflows')}}</a>
                     </li>
                 </ul>
-            </li>
+            </li> -->
 
         </ul>
 
