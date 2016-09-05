@@ -8,14 +8,14 @@ angular.module('app.class').config(function ($stateProvider) {
 	    .state('app.class', {
 	        abstract: true,
 	        data: {
-	            title: 'Open Classes'
+	            title: 'Classes'
 	        }
 	    })
         
         .state('app.class.list', {
             url: '/class/list',
             data: {
-                title: 'Open Classes'
+                title: 'Classes'
             },
             views: {
                 "content@app": {
