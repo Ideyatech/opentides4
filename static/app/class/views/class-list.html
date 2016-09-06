@@ -1,3 +1,14 @@
+<style>
+.widget-body .thumbnail {
+	width: 50px;
+	height: auto;
+	float: left;
+	vertical-align: middle;
+	border: none;
+}
+</style>
+
+
 <div id="content">
 <div class="row">
     <big-breadcrumbs items="['Classes']" icon="book" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></big-breadcrumbs>
@@ -23,6 +34,17 @@
 								        <label class="label">Class Name</label>
 								        <label class="input">
 								            <input type="text">
+								        </label>
+								    </section>
+								    <section>
+								        <label class="label">Class Type</label>
+								        <label class="select">
+								            <select>
+								            	<option>All Classes</option>
+								            	<option>Open Class</option>
+								            	<option>Gforce Project</option>
+								            	<option>Training</option>
+								            </select>
 								        </label>
 								    </section>
 								    <section>
@@ -96,6 +118,7 @@
 			                            <th>Time</th>
 			                            <th>Class Name</th>
 			                            <th>Teacher</th>
+			                            <th>Class Type</th>
 			                            <th>Venue</th>
 			                            <th width="50"></th>
 			                        </tr>
@@ -105,8 +128,13 @@
 			                        <tr>
 			                            <td>Aug 23, 2016</td>
 			                            <td>10:30 AM - 11:40 AM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Zumba</a></td>
-			                            <td>Grace</td>
+			                            <td>
+			                            	<a data-ui-sref="app.class.info" title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-kids.jpg"/></span>
+			                            	  &nbsp;Kids Class</a>
+			                            </td>
+			                            <td>Myka</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -116,8 +144,13 @@
 			                        <tr>
 			                            <td>Aug 23, 2016</td>
 			                            <td>11:30 AM - 12:40 PM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Lyrical Hip-Hop</a></td>
-			                            <td>El John</td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-lyrical.jpg"/></span>
+			                            	  &nbsp;Lyrical Hip-Hop</a>
+			                           	</td>
+			                            <td>Ram</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -127,8 +160,13 @@
 			                        <tr>
 			                            <td>Aug 24, 2016</td>
 			                            <td>3:30 AM - 4:40 PM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Sexy Hip-Hop</a></td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-lyrical.jpg"/></span>
+			                            	  &nbsp;Sexy Hip-Hop</a>
+			                            </td>
 			                            <td>Ritz</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -138,8 +176,13 @@
 			                        <tr>
 			                            <td>Aug 25, 2016</td>
 			                            <td>5:30 AM - 6:40 PM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Sexy Hip-Hop</a></td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-lyrical.jpg"/></span>
+			                            	  &nbsp;Sexy Hip-Hop</a>
+			                            </td>
 			                            <td>Ritz</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -150,8 +193,13 @@
 			                        <tr>
 			                            <td>Aug 27, 2016</td>
 			                            <td>10:30 AM - 11:40 AM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Zumba</a></td>
-			                            <td>Grace</td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-zumba.jpg"/></span>
+			                            	  &nbsp;Zumba</a>
+			                            </td>
+			                            <td>Ray-An</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -161,8 +209,13 @@
 			                        <tr>
 			                            <td>Aug 23, 2016</td>
 			                            <td>10:30 AM - 11:40 AM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Zumba</a></td>
-			                            <td>Grace</td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-zumba.jpg"/></span>
+			                            	  &nbsp;Zumba</a>
+			                            </td>
+			                            <td>Ray-An</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -172,8 +225,13 @@
 			                        <tr>
 			                            <td>Aug 23, 2016</td>
 			                            <td>11:30 AM - 12:40 PM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Lyrical Hip-Hop</a></td>
-			                            <td>El John</td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-lyrical.jpg"/></span>
+			                            	  &nbsp;Lyrical Hip-Hop</a>
+			                            </td>
+			                            <td>Ram</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -183,8 +241,13 @@
 			                        <tr>
 			                            <td>Aug 24, 2016</td>
 			                            <td>3:30 AM - 4:40 PM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Sexy Hip-Hop</a></td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-sexy.jpg"/></span>
+			                            	  &nbsp;Sexy Hip-Hop</a>
+			                            </td>
 			                            <td>Ritz</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -194,8 +257,13 @@
 			                        <tr>
 			                            <td>Aug 25, 2016</td>
 			                            <td>5:30 AM - 6:40 PM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Sexy Hip-Hop</a></td>
+			                            <td>
+			                            	<a title="Class Info">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/class-sexy.jpg"/></span>
+			                            	  &nbsp;Sexy Hip-Hop</a>
+			                            </td>
 			                            <td>Ritz</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
@@ -206,8 +274,12 @@
 			                        <tr>
 			                            <td>Aug 27, 2016</td>
 			                            <td>10:30 AM - 11:40 AM</td>
-			                            <td><a data-ui-sref="app.class.info" title="Class Info">Zumba</a></td>
-			                            <td>Grace</td>
+			                            <td>
+			                            	<a title="Class Info"><span class="thumbnail no-margin"><img src="styles/img/class-zumba.jpg"/></span>
+			                            	  &nbsp;Zumba</a>
+			                            </td>
+			                            <td>Ray-An</td>
+			                            <td>Open Class</td>
 			                            <td>G-Force Dance Studio</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>

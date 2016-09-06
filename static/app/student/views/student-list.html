@@ -1,3 +1,13 @@
+<style>
+.widget-body .thumbnail {
+	width: 50px;
+	height: auto;
+	float: left;
+	vertical-align: middle;
+	border: none;
+}
+</style>
+
 <div id="content">
 <div class="row">
     <big-breadcrumbs items="['Students']" icon="user" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></big-breadcrumbs>
@@ -26,12 +36,12 @@
 								            <input type="text">
 								        </label>
 								    </section>
-								    <section>
-								        <label class="label">Email</label>
+								    <!-- <section>
+								        <label class="label">Class</label>
 								        <label class="input">
 								            <input type="text">
 								        </label>
-								    </section>
+								    </section> -->
 								    <section>
 								        <label class="label">Gender</label>
 								        <label class="select">
@@ -42,7 +52,7 @@
 								            </select>
 								        </label>
 								    </section>
-								    <section>
+								    <!-- <section>
 								        <label class="label">City</label>
 								        <label class="select">
 								            <select multiple style="height: 70px;">
@@ -51,7 +61,7 @@
 								            	<option>Quezon City</option>
 								            </select>
 								        </label>
-								    </section>
+								    </section> -->
 								    <section>
 								        <label class="label">Balance</label>
 								        <label class="select">
@@ -101,9 +111,8 @@
 			                        <thead>
 			                        <tr>
 			                            <th>Name</th>
-			                            <th>Gender</th>
+			                            <th>Age & Gender</th>
 			                            <th>City</th>
-			                            <th>Email Address</th>
 			                            <th>Contact Number</th>
 			                            <th>Balance</th>
 			                            <th width="50"></th>
@@ -111,22 +120,28 @@
 			                        </thead>
 			                        <tbody>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">Allan Tan</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            		<span class="thumbnail no-margin"><img src="styles/img/avatars/1.png"/></span>
+			                            	  &nbsp;Sophie Connor</a>
+			                            </td>
+			                            <td>Female <p>18 yo.</p></td>
 			                            <td>Pasig</td>
-			                            <td>allan@ideyatech.com</td>
-			                            <td>0975 830 2023</td>
-			                            <td>0 Php</td>
+			                            <td>0977 677 0653</td>
+			                            <td>350.00</td>
 			                            <td>
 			                            	<i class="fa fa-edit"></i>
 			                            	<i class="fa fa-trash-o"></i>
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">AJ Albaniel</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/aj-front.png"/></span>
+			                            	 &nbsp;AJ Albaniel</a>
+			                            </td>
+			                            <td>Male <p>20 yo.</p></td>
 			                            <td>Paranaque</td>
-			                            <td>aj@ideyatech.com</td>
 			                            <td>0977 677 0653</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -135,10 +150,13 @@
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">Chris Lee</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/lovel-front.png"/></span>
+			                            	 &nbsp;Lovelle Camacho</a>
+			                            </td>
+			                            <td>Male <p>19 yo.</p></td>
 			                            <td>Taguig</td>
-			                            <td>chris@ideyatech.com</td>
 			                            <td>0976 823 9910</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -147,10 +165,13 @@
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">Danica Ocampo</a></td>
-			                            <td>Female</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/dexter-front.png"/></span>
+			                            	 &nbsp;Dexter Dy</a>
+			                            </td>
+			                            <td>Female <p>22 yo.</p></td>
 			                            <td>Quezon City</td>
-			                            <td>danica@ideyatech.com</td>
 			                            <td>0922 837 12 92</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -159,10 +180,13 @@
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">Allan Tan</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/chris-front.jpg"/></span>
+			                            	 &nbsp;Chris Lee</a>
+			                            </td>
+			                            <td>Male <p>21 yo.</p></td>
 			                            <td>Pasig</td>
-			                            <td>allan@ideyatech.com</td>
 			                            <td>0975 830 2023</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -171,10 +195,13 @@
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">AJ Albaniel</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/avatars/male.png"/></span>
+			                            	 &nbsp;AJ Albaniel</a>
+			                           	</td>
+			                            <td>Male <p>21 yo.</p></td>
 			                            <td>Paranaque</td>
-			                            <td>aj@ideyatech.com</td>
 			                            <td>0977 677 0653</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -183,10 +210,13 @@
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">Chris Lee</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/avatars/male.png"/></span>
+			                            	 &nbsp;Chris Lee</a>
+			                            </td>
+			                            <td>Male <p>20 yo.</p></td>
 			                            <td>Taguig</td>
-			                            <td>chris@ideyatech.com</td>
 			                            <td>0976 823 9910</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -195,10 +225,13 @@
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">Danica Ocampo</a></td>
-			                            <td>Female</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/avatars/male.png"/></span>
+			                            	 &nbsp;Danica Ocampo</a>
+			                            </td>
+			                            <td>Female <p>25 yo.</p></td>
 			                            <td>Quezon City</td>
-			                            <td>danica@ideyatech.com</td>
 			                            <td>0922 837 12 92</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -208,10 +241,13 @@
 			                        </tr>
 			                        
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">Allan Tan</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/avatars/male.png"/></span>
+			                            	 &nbsp;Allan Tan</a>
+			                            </td>
+			                            <td>Male <p>23 yo.</p></td>
 			                            <td>Pasig</td>
-			                            <td>allan@ideyatech.com</td>
 			                            <td>0975 830 2023</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -220,10 +256,13 @@
 			                            </td>
 			                        </tr>
 			                        <tr>
-			                            <td><a data-ui-sref="app.student.profile" title="Profile">AJ Albaniel</a></td>
-			                            <td>Male</td>
+			                            <td>
+			                            	<a data-ui-sref="app.student.profile" title="Profile">
+			                            	<span class="thumbnail no-margin"><img src="styles/img/avatars/male.png"/></span>
+			                            	 &nbsp;AJ Albaniel</a>
+			                            </td>
+			                            <td>Male <p>18 yo.</p></td>
 			                            <td>Paranaque</td>
-			                            <td>aj@ideyatech.com</td>
 			                            <td>0977 677 0653</td>
 			                            <td>0 Php</td>
 			                            <td>

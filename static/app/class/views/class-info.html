@@ -1,3 +1,74 @@
+<!-- MODAL -->
+<div class="modal fade" id="bookGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Book a Group</h4>
+            </div>
+            <form class="smart-form">
+            <div class="modal-body ">
+              	<fieldset>
+              		<section>
+				        <label class="label">Names</label>
+				        <label class="input">
+				       		<input type="text"/>
+				        </label>
+				    </section>
+			    </fieldset>
+            </div>
+            </form>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Book
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="bookStudent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Book a Student</h4>
+            </div>
+            <form class="smart-form">
+            <div class="modal-body ">
+              	<fieldset>
+              		<section>
+				        <label class="label">Name</label>
+				        <label class="input">
+				       		<input type="text"/>
+				        </label>
+				    </section>
+			    </fieldset>
+            </div>
+            </form>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Cancel
+                </button>
+                <button type="button" class="btn btn-primary">
+                    Book this Student
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END OF MODAL -->
+
+
 <div id="content">
 
 
@@ -20,7 +91,7 @@
     <div class="col-sm-12">
         <div class="row">
             <div class="col-sm-2">
-                <img src="styles/img/demo/64x64.png" alt="demo user" width="100%" style="margin: 10px">
+                <img src="styles/img/class-kids.jpg" alt="demo user" width="100%" style="margin: 10px">
             </div>
             <div class="col-sm-10">
                 <h1>Kids Class with Myka</span>
@@ -38,7 +109,7 @@
                     </li>
                     <li>
                         <p>
-                            <span class="text-muted">Teacher</span>&#xA0;&#xA0;<a>Grace</a>
+                            <span class="text-muted">Teacher</span>&#xA0;&#xA0;<a>Myka</a>
                         </p>
                     </li>
                     <li>
@@ -54,6 +125,11 @@
                     <li>
                         <p>
                             <span class="text-muted">Venue</span>&#xA0;&#xA0;G-Force Dance Studio
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="text-muted">Type</span>&#xA0;&#xA0;Open Class
                         </p>
                     </li>
                     <li>
@@ -155,7 +231,8 @@
    <h1>Students [4/20]
    
    	<button class="btn btn-success pull-right"
-   		data-toggle="modal" data-target="#myModal">Book a Student</button>
+   		data-toggle="modal" data-target="#bookStudent" style="margin-left: 5px;">Book a Student</button>
+    <button class="btn btn-success pull-right" data-toggle="modal" data-target="#bookGroup">Book a Group</button>
    </h1>
    
    
