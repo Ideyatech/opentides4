@@ -43,7 +43,8 @@ angular.module('app', [
     
 
     'app.student',
-    'app.class'
+    'app.class',
+    'app.teacher'
 ])
 .config(function ($provide, $httpProvider, $locationProvider, RestangularProvider) {
 

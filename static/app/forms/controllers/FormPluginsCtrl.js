@@ -26,4 +26,9 @@ angular.module('app.forms').controller('FormPluginsCtrl', function($scope, $log)
 		changeMonth: true,
 		changeYear: true
 	}
+	
+	$scope.datepickerOptions = {
+		changeMonth: true,
+		changeYear: true
+	}
 });

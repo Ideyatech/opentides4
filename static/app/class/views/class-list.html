@@ -84,7 +84,7 @@
 								
 								<a class="btn btn-success pull-right"
 									style="margin: 10px;"
-									data-toggle="modal" data-target="#myModal">Add Open Class</a>
+									data-toggle="modal" data-target="#myModal">Add Class</a>
 							</div>
 								
 							<div class="table-responsive">
@@ -283,10 +283,26 @@
 				            <input type="text">
 				        </label>
 				    </section>
+    				<section>
+			        <label class="label">Type</label>
+				        <label class="select">
+				            <select ng-model="typeOfClass">
+				            	<option value="0" selected="selected">Open Class</option>
+				            	<option value="1">G-Force Project</option>
+				            	<option value="2">Private Class</option>
+				            </select>
+				        </label>
+				    </section>
              		<section>
 				        <label class="label">Description</label>
 				        <label class="textarea">
 				            <textarea width="100%"></textarea>
+				        </label>
+				    </section>
+				    <section ng-show="typeOfClass == 2">
+				        <label class="label">Teacher's Fee</label>
+				        <label class="input">
+				            <input type="number">
 				        </label>
 				    </section>
              		<section>
@@ -311,23 +327,32 @@
 				    <section>
 				    	<label class="label">Schedule</label>
 				    </section>
-				    <div class="row">
-				    	<section class="col col-4">
-					        <label class="input">
-					        	 <input placeholder="Date" type="text" data-smart-datepicker data-dateformat='dd/mm/yy' >
-					        </label>
-					    </section>
-				    	<section class="col col-4">
-					        <label class="input">
-					        	 <input placeholder="Start Time" type="text" data-smart-datepicker data-dateformat='dd/mm/yy' >
-					        </label>
-					    </section>
-					    <section class="col col-4">
-					        <label class="input">
-					        	 <input placeholder="End Time" type="text" data-smart-datepicker data-dateformat='dd/mm/yy' >
-					        </label>
-					    </section>
-				    </div>
+         			<section>
+	   				    <div class="row" ng-repeat="date in schedule">
+					    	<section class="col col-4">
+						        <label class="input">
+						        	 <input placeholder="Date" type="text" data-smart-datepicker data-dateformat='dd/mm/yy' >
+						        </label>
+						    </section>
+					    	<section class="col col-3">
+						        <label class="input">
+						        	 <input class="form-control" data-smart-timepicker type="text" placeholder="Start time">
+						        </label>
+						    </section>
+						    <section class="col col-3">
+						        <label class="input">
+						        	 <input class="form-control" data-smart-timepicker type="text" placeholder="End time">
+						        </label>
+						    </section>
+						    <section class="col col-2" ng-hide="{{$index == 0}}">
+						    	<label class="input">
+						        	<button type="button" class="col col-2 btn btn-danger form-control remove-sched" ng-click="removeSchedule($index)"><i class="fa fa-times" aria-hidden="true"></i></button>
+						        </label>
+						    </section>
+						    
+					    </div>
+				        <a ng-show="typeOfClass == 1" ng-click="addSchedule()">+ Add Another Schedule</a>
+				    </section>
 				    <div class="row">
 				    	<section class="col col-8">
 					        <label class="label">Venue</label>
@@ -358,3 +383,27 @@
         </div>
     </div>
 </div>
+
+<!---- TEMPLATES ---->
+
+<script type="text/template" class="schedule-template">
+	<div class="row">
+	   	<section class="col col-4">
+	        <label class="input">
+	        	 <input placeholder="Date" type="text" data-smart-datepicker data-dateformat='dd/mm/yy' >
+	        </label>
+	    </section>
+	   	<section class="col col-4">
+	        <div class="form-group">
+	                     <div class="input-group">
+	                         <input class="form-control" data-smart-timepicker type="text" placeholder="Start time">
+	                     </div>
+	                 </div>
+	    </section>
+	    <section class="col col-4">
+	        <label class="input">
+	        	 <input class="form-control" data-smart-timepicker type="text" placeholder="End time">
+	        </label>
+	    </section>
+	</div>
+</script>

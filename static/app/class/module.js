@@ -22,6 +22,14 @@ angular.module('app.class').config(function ($stateProvider) {
                     controller: 'ClassListCtrl',
                     templateUrl: "app/class/views/class-list.html"
                 }
+            },
+            resolve: {
+                scripts: function(lazyScript){
+                    return lazyScript.register([
+                        'build/vendor.ui.js'
+                    ])
+
+                }
             }
         })
         

@@ -13,3 +13,4 @@ logs
 /smartadmin-angular-js-full/
 **/build/
 **/node_modules/
+/smart-admin/
