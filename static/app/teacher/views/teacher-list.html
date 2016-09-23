@@ -27,16 +27,6 @@
 								        </label>
 								    </section>
 								    <section>
-								        <label class="label">Gender</label>
-								        <label class="select">
-								            <select>
-								            	<option></option>
-								            	<option>Male</option>
-								            	<option>Female</option>
-								            </select>
-								        </label>
-								    </section>
-								    <section>
 								        <label class="label">Balance</label>
 								        <label class="select">
 								            <select>
@@ -86,9 +76,8 @@
 			                        <tr>
 			                        	<th>Photo</th>
 			                            <th>Name</th>
-			                            <th>Gender</th>
 			                            <th>Contact Number</th>
-			                            <th>Balance</th>
+			                            <th>Payment Due</th>
 			                            <th width="50"></th>
 			                        </tr>
 			                        </thead>
@@ -96,7 +85,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/myka.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Myka Gonzaga</a></td>
-			                            <td>Male</td>
 			                            <td>0975 830 2023</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -107,7 +95,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/ishii.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Junichi Ishii</a></td>
-			                            <td>Male</td>
 			                            <td>0977 677 0653</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -118,7 +105,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/royce.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Royce Chua</a></td>
-			                            <td>Male</td>
 			                            <td>0976 823 9910</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -129,7 +115,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/jorge.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Jorge Jahnke</a></td>
-			                            <td>Female</td>
 			                            <td>0922 837 12 92</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -140,7 +125,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/gelai.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Gelai Aguzar</a></td>
-			                            <td>Male</td>
 			                            <td>0975 830 2023</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -151,7 +135,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/chrissian.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Chrissian Yu</a></td>
-			                            <td>Male</td>
 			                            <td>0977 677 0653</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -162,7 +145,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/julia.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Julia Villaruel</a></td>
-			                            <td>Male</td>
 			                            <td>0976 823 9910</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -173,7 +155,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/jb.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">JB Pappas</a></td>
-			                            <td>Female</td>
 			                            <td>0922 837 12 92</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -185,7 +166,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/michael.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Michael Jahnke</a></td>
-			                            <td>Male</td>
 			                            <td>0975 830 2023</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -196,7 +176,6 @@
 			                        <tr>
 			                        	<td><a data-ui-sref="app.teacher.profile" title="Profile"><img class="teacher-pic" src="styles/img/teachers/jp.jpg"/></a></td>
 			                            <td><a data-ui-sref="app.teacher.profile" title="Profile">Jp Enriquez</a></td>
-			                            <td>Male</td>
 			                            <td>0977 677 0653</td>
 			                            <td>0 Php</td>
 			                            <td>
@@ -352,61 +331,6 @@
 					    </div>
 					    
 				    </fieldset>
-				    
-				    <fieldset>
-               			<section>
-               				<i>In case of emergency</i>
-               			</section>
-               			<div class="row" ng-show="birthdate == null">
-					    	<section class="col col-4">
-						        <label class="label">Contact Name</label>
-						        <label class="input">
-						            <input type="text">
-						        </label>
-						    </section>
-					    	<section class="col col-4">
-						        <label class="label">Contact Number</label>
-						        <label class="input">
-						            <input type="text">
-						        </label>
-						    </section>
-						</div>
-						
-						
-						<div ng-show="birthdate != null">
-							<div class="row">
-						    	<section class="col col-4">
-							        <label class="label">Father's Name</label>
-							        <label class="input">
-							            <input type="text">
-							        </label>
-							    </section>
-						    	<section class="col col-4">
-							        <label class="label">Father's Contact Number</label>
-							        <label class="input">
-							            <input type="text">
-							        </label>
-							    </section>
-							</div>
-							<div class="row">
-						    	<section class="col col-4">
-							        <label class="label">Mother's Name</label>
-							        <label class="input">
-							            <input type="text">
-							        </label>
-							    </section>
-						    	<section class="col col-4">
-							        <label class="label">Mother's Contact Number</label>
-							        <label class="input">
-							            <input type="text">
-							        </label>
-							    </section>
-							</div>
-						</div>
-						
-               			
-               		</fieldset>
-            
 				    
                	</section>
             </div>
