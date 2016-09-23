@@ -14,3 +14,4 @@ logs
 **/build/
 **/node_modules/
 /smart-admin/
+/static/build/
